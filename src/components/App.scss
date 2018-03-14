@@ -1,0 +1,45 @@
+body {
+  background-color: #bbbbbb;
+  font-family: 'Vollkorn', serif;
+  -webkit-font-smoothing: antialiased;
+  padding: 0;
+  margin: 0;
+  user-select: none;
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(15%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.sc-container {
+  width: 756px;
+  height: 519px;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  box-shadow: 15px 15px 50px #666666;
+}
+
+@media screen and (max-width: 768px) {
+  .sc-container {
+    width: 438px;
+  }
+}
+
+@media screen and (max-width: 469px) {
+  .sc-container {
+    width: 100%;
+    height: inherit;
+    overflow: auto;
+    margin-top: 0;
+  }
+}

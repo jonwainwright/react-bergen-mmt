@@ -1,0 +1,158 @@
+.sc-item_form_title {
+  display: none;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 20px;
+}
+
+.sc-item_form {
+  order: 3;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  height: 59px;
+}
+
+.sc-item_form_color {
+  width: 153px;
+  height: 59px;
+  box-sizing: border-box;
+  border-top: 1px solid #dedadb;
+  border-left: 1px solid #dedadb;
+  border-bottom: 1px solid #dedadb;
+  text-align: center;
+  position: relative;
+}
+
+.sc-item_form_color:after {
+  height: 42px;
+  display: block;
+  border-right: 1px solid #dedadb;
+  content: '';
+  position: absolute;
+  top: 8px;
+  right: 0;
+}
+
+.sc-item_form_color_label {
+  position: relative;
+  text-transform: uppercase;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 12px;
+  background-color: #ffffff;
+  top: -10px;
+  padding: 5px;
+}
+
+.sc-item_form_color_select {
+  border: none;
+  font-family: 'Vollkorn', serif;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  display: block;
+  margin: 0 auto;
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20256%20448%22%20enable-background%3D%22new%200%200%20256%20448%22%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E.arrow%7Bfill%3A#dedadb%3B%7D%3C%2Fstyle%3E%3Cpath%20class%3D%22arrow%22%20d%3D%22M255.9%20168c0-4.2-1.6-7.9-4.8-11.2-3.2-3.2-6.9-4.8-11.2-4.8H16c-4.2%200-7.9%201.6-11.2%204.8S0%20163.8%200%20168c0%204.4%201.6%208.2%204.8%2011.4l112%20112c3.1%203.1%206.8%204.6%2011.2%204.6%204.4%200%208.2-1.5%2011.4-4.6l112-112c3-3.2%204.5-7%204.5-11.4z%22%2F%3E%3C%2Fsvg%3E%0A');
+  background-repeat: no-repeat;
+  background-position: right;
+  padding-right: 18px;
+}
+
+.sc-item_form_color_select::-ms-expand {
+  display: none;
+}
+
+.sc-item_form_quantity {
+  width: 93px;
+  height: 59px;
+  box-sizing: border-box;
+  border-top: 1px solid #dedadb;
+  border-bottom: 1px solid #dedadb;
+  text-align: center;
+}
+
+.sc-item_form_quantity_label {
+  position: relative;
+  text-transform: uppercase;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 12px;
+  background-color: #ffffff;
+  top: -10px;
+  padding: 5px;
+}
+
+.sc-item_form_quantity_input {
+  margin-top: -7px;
+}
+
+.sc-item_form_quantity_input_decrease,
+.sc-item_form_quantity_input_increase {
+  border: 0;
+  padding: 5px;
+  margin: 0;
+  font-size: 20px;
+  color: #dedadb;
+  background-color: #ffffff;
+}
+
+.sc-item_form_quantity_input_value {
+  border: none;
+  width: 25px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Vollkorn', serif;
+  font-size: 22px;
+}
+
+.sc-item_form_addtocart {
+  width: 121px;
+  height: 59px;
+  background-color: #000000;
+  color: #ffffff;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 17px;
+  text-transform: uppercase;
+  border: none;
+  box-sizing: border-box;
+  transition-duration: 500ms;
+  transition-property: background-color, color;
+  transition-timing-function: ease-out;
+  cursor: pointer;
+}
+
+.sc-item_form_addtocart:hover {
+  background-color: #cecece;
+  color: #000000;
+}
+
+@media screen and (max-width: 469px) {
+  .sc-item_form {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+
+  .sc-item_form_color {
+    width: 100%;
+    border-left: none;
+    border-bottom: none;
+    margin-top: 20px;
+  }
+
+  .sc-item_form_color:after {
+    border: none;
+  }
+
+  .sc-item_form_quantity {
+    width: 100%;
+    border-bottom: none;
+    margin-top: 20px;
+  }
+
+  .sc-item_form_addtocart {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .sc-item_form_title {
+    display: block;
+  }
+}

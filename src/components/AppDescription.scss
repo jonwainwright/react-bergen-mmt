@@ -1,0 +1,74 @@
+.sc-item_description_title {
+  display: none;
+}
+
+.sc-item_description_name_label {
+  display: none;
+}
+
+.sc-item_description_price_label {
+  display: none;
+}
+
+.sc-item_description {
+  height: 170px;
+  text-align: center;
+  animation: 1s ease-out 0s 1 slideInFromBottom;
+  order: 1;
+}
+
+.sc-item_description_name {
+  margin: 0;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.sc-item_description_name_text {
+  margin: 0;
+  font-size: 23px;
+}
+
+.sc-item_description_by {
+  margin: 0;
+  text-align: center;
+}
+
+.sc-item_description_by_label {
+  margin: 0;
+  display: inline;
+  text-transform: lowercase;
+  font-size: 10px;
+}
+
+.sc-item_description_by_label:after {
+  content: ' ';
+}
+
+.sc-item_description_by_text {
+  margin: 0;
+  display: inline;
+  text-transform: uppercase;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 13px;
+  color: #cecece;
+}
+
+.sc-item_description_price {
+  margin: 0;
+  text-align: center;
+  padding-top: 38px;
+}
+
+.sc-item_description_price_text {
+  margin: 0;
+  font-size: 28px;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+@media screen and (max-width: 469px) {
+  .sc-item_description {
+    display: block;
+    height: inherit;
+    margin-bottom: 40px;
+  }
+}

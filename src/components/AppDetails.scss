@@ -1,0 +1,18 @@
+.sc-item_details {
+  height: 519px;
+  float: left;
+  display: grid;
+  padding: 25px 35px;
+  box-sizing: border-box;
+}
+
+.sc-item_title {
+  display: none;
+}
+
+@media screen and (max-width: 469px) {
+  .sc-item_details {
+    width: 100%;
+    height: inherit;
+  }
+}

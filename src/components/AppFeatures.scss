@@ -1,0 +1,31 @@
+.sc-item_features {
+  height: 170px;
+  text-align: center;
+  animation: 1s ease-out 0s 1 slideInFromBottom;
+  order: 1;
+}
+
+.sc-item_features_title {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 20px;
+}
+
+.sc-item_features_list {
+  padding: 0;
+  margin: 0;
+}
+
+.sc-item_features_listitem {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 469px) {
+  .sc-item_features {
+    display: block;
+    height: inherit;
+    margin-bottom: 40px;
+  }
+}

@@ -1,0 +1,22 @@
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.sc-item_image {
+  width: 318px;
+  height: 519px;
+  float: left;
+  animation: 1s ease-out 0s 1 appear;
+}
+
+@media screen and (max-width: 768px) {
+  .sc-item_image {
+    display: none;
+  }
+}

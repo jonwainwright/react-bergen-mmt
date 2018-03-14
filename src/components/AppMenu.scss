@@ -1,0 +1,49 @@
+
+.sc-item_menu {
+  order: 4;
+}
+
+.sc-item_menuitems {
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.sc-item_menuitem {
+  list-style-type: none;
+  margin: 0;
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: 'Fjalla One', sans-serif;
+  margin-right: 25px;
+}
+
+.sc-item_menuitem_link {
+  color: #cecece;
+  font-size: 12px;
+  text-decoration: none;
+  transition-duration: 500ms;
+  transition-property: color;
+  transition-timing-function: ease-out;
+}
+
+.sc-item_menuitem_link:hover {
+  color: #000000;
+}
+
+.sc-item_menuitem_link.active {
+  color: #000000;
+  border-bottom: 1px solid #000000;
+  padding-bottom: 4px;
+}
+
+.sc-item_menuitem:last-child {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 469px) {
+  .sc-item_menu {
+    display: none;
+  }
+}
